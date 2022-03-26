@@ -29,12 +29,7 @@ while chance >= 1 :
                 print("참고로", ask , "보다 커요!")
                 print("")
                 ask = int(input("무엇인가요? "))
-                chance -= 1
-        
-        elif chance == 0:
-            print("기회는 끝~")
-
-        
+                chance -= 1        
         
         else:
             print("참고로 숫자는", ask , "보다 작아요!")
@@ -42,25 +37,12 @@ while chance >= 1 :
             ask = int(input("무엇인가요? "))
             chance -= 1
         
-    
-
+        if chance == 0:
+            print("기회는 끝~")
+            break
+        
         if chance == 1:
-            print("기회는 단 한 번 뿐이니 신중해지세요!")
-            if ask == num:
-                if ask == num:
-                    print("우와 맞췄어요! 대단해요",end="") # end="" 하면 줄바꿈이 없어진다
-                    break
-            elif chance == 0:
-                print("정답은", num , "입니다")\
-            
-            elif ask == num:
-                if ask == num:
-                    print("우와 맞췄어요! 대단해요",end="") # end="" 하면 줄바꿈이 없어진다
-
-            else:
-                ask = int(input("무엇인가요? "))
-            
-
+            print("기회는 단 한 번 뿐이니 신중해지세요!"))
 
     
 

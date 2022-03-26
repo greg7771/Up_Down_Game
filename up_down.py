@@ -10,10 +10,6 @@ ask = int(input("안녕 나는 구렁이야. 너랑 숫자게임을 하고시포
 
 chance -= 1
 
-def correct():
-    if ask == num:
-            print("우와 맞췄어요! 대단해요",end="") # end="" 하면 줄바꿈이 없어진다
-
 
 
 while chance >= 1 :
@@ -21,8 +17,9 @@ while chance >= 1 :
 
 
         if ask == num:
-            correct()
-            break
+            if ask == num:
+                print("우와 맞췄어요! 대단해요",end="") # end="" 하면 줄바꿈이 없어진다
+                break
 
         else:
                 print("")
@@ -50,13 +47,15 @@ while chance >= 1 :
         if chance == 1:
             print("기회는 단 한 번 뿐이니 신중해지세요!")
             if ask == num:
-                correct()
-                break
+                if ask == num:
+                    print("우와 맞췄어요! 대단해요",end="") # end="" 하면 줄바꿈이 없어진다
+                    break
             elif chance == 0:
                 print("정답은", num , "입니다")\
             
             elif ask == num:
-                correct()
+                if ask == num:
+                    print("우와 맞췄어요! 대단해요",end="") # end="" 하면 줄바꿈이 없어진다
 
             else:
                 ask = int(input("무엇인가요? "))

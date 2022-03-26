@@ -1,8 +1,6 @@
 import random
 
-# num = random.randint(1,100)
-
-num = 10
+num = random.randint(1,100)
 
 chance = 5
 

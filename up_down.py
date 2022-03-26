@@ -13,8 +13,6 @@ chance -= 1
 def correct():
     if ask == num:
             print("우와 맞췄어요! 대단해요",end="") # end="" 하면 줄바꿈이 없어진다
-            
-
 
 
 
@@ -24,6 +22,7 @@ while chance >= 1 :
 
         if ask == num:
             correct()
+            break
 
         else:
                 print("")
@@ -34,6 +33,10 @@ while chance >= 1 :
                 print("")
                 ask = int(input("무엇인가요? "))
                 chance -= 1
+        
+        elif chance == 0:
+            print("기회는 끝~")
+
         
         
         else:
@@ -46,12 +49,21 @@ while chance >= 1 :
 
         if chance == 1:
             print("기회는 단 한 번 뿐이니 신중해지세요!")
-             
+            if ask == num:
+                correct()
+                break
+            elif chance == 0:
+                print("정답은", num , "입니다")\
+            
+            elif ask == num:
+                correct()
+
+            else:
+                ask = int(input("무엇인가요? "))
+            
+
 
     
-        if chance == 0 :
-            print("땡 틀렸습니다~")
-            print("정답은", num, "입니다~")\
 
 
 

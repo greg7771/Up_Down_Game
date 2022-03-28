@@ -2,12 +2,11 @@ import random
 
 num = random.randint(1,100)
 
-chance = 5
+chance = 5 # 기회는 총 5번!
 
 ask = int(input("안녕 나는 구렁이야. 너랑 숫자게임을 하고시포! "))
 
-chance -= 1
-
+chance -= 1 # 처음 물어본 기회 뺴주기!
 
 
 while chance >= 1 :
@@ -46,6 +45,8 @@ while chance >= 1 :
 
 print("")
 print("정답은", num , "이였습니다~")
+
+
 
     
 
